@@ -1,0 +1,1720 @@
+/* This resets the internet's core styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+:focus {
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  /*list-style: none;*/
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+html,
+body {
+  height: 100%;
+
+}
+a {
+  text-decoration: none;
+}
+
+.band-members li {
+  margin-left:40px;
+}
+
+.song {
+  font-size:20px;
+  text-align:left;
+  float:left;
+  /*border:1px solid green;*/
+  width:50%;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.artist {
+  /*color:#bbb;
+  font-size:17px;*/
+}
+
+li {
+  /*list-style: none;*/
+  /*margin-left:40px !important;*/
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+*[class*='grid-'] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nested {
+  background: none;
+  padding: 0;
+}
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  display: inline;
+  float: left;
+  width: 96.66666666666667%;
+  margin: 0 1.6666666666666667%;
+}
+@media all and (min-width: 38em) {
+  .grid-1 {
+    display: inline;
+    float: left;
+    width: 5%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-2 {
+    display: inline;
+    float: left;
+    width: 13.333333333333334%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-3 {
+    display: inline;
+    float: left;
+    width: 21.666666666666668%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-4,
+  .grid-third {
+    display: inline;
+    float: left;
+    width: 30%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-5 {
+    display: inline;
+    float: left;
+    width: 38.333333333333336%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-6,
+  .grid-half {
+    display: inline;
+    float: left;
+    width: 46.666666666666664%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-7 {
+    display: inline;
+    float: left;
+    width: 55.00000000000001%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-8 {
+    display: inline;
+    float: left;
+    width: 63.33333333333333%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-9 {
+    display: inline;
+    float: left;
+    width: 71.66666666666667%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-10 {
+    display: inline;
+    float: left;
+    width: 80%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-11 {
+    display: inline;
+    float: left;
+    width: 88.33333333333333%;
+    margin: 0 1.6666666666666667%;
+  }
+  .grid-12,
+  .grid-full {
+    display: inline;
+    float: left;
+    width: 96.66666666666667%;
+    margin: 0 1.6666666666666667%;
+  }
+  .push-1 {
+    margin-left: 9.999999999999998%;
+  }
+  .push-2 {
+    margin-left: 18.333333333333332%;
+  }
+  .push-3 {
+    margin-left: 26.666666666666668%;
+  }
+  .push-4 {
+    margin-left: 34.99999999999999%;
+  }
+  .push-5 {
+    margin-left: 43.333333333333336%;
+  }
+  .push-6 {
+    margin-left: 51.666666666666664%;
+  }
+  .push-7 {
+    margin-left: 60%;
+  }
+  .push-8 {
+    margin-left: 68.33333333333333%;
+  }
+  .push-9 {
+    margin-left: 76.66666666666667%;
+  }
+  .push-10 {
+    margin-left: 85.00000000000001%;
+  }
+  .push-11 {
+    margin-left: 93.33333333333333%;
+  }
+  .push-12 {
+    margin-left: 101.66666666666667%;
+  }
+  .pull-1 {
+    margin-right: 9.999999999999998%;
+  }
+  .pull-2 {
+    margin-right: 18.333333333333332%;
+  }
+  .pull-3 {
+    margin-right: 26.666666666666668%;
+  }
+  .pull-4 {
+    margin-right: 34.99999999999999%;
+  }
+  .pull-5 {
+    margin-right: 43.333333333333336%;
+  }
+  .pull-6 {
+    margin-right: 51.666666666666664%;
+  }
+  .pull-7 {
+    margin-right: 60%;
+  }
+  .pull-8 {
+    margin-right: 68.33333333333333%;
+  }
+  .pull-9 {
+    margin-right: 76.66666666666667%;
+  }
+  .pull-10 {
+    margin-right: 85.00000000000001%;
+  }
+  .pull-11 {
+    margin-right: 93.33333333333333%;
+  }
+  .pull-12 {
+    margin-right: 101.66666666666667%;
+  }
+}
+.row-12 {
+  display: block;
+  width: 103.33333333333334%;
+  margin: 0 -1.6666666666666667%;
+  *zoom: 1;
+}
+.row-12:before,
+.row-12:after {
+  content: "";
+  display: table;
+}
+.row-12:after {
+  clear: both;
+}
+.row-12 .grid-1 {
+  display: inline;
+  float: left;
+  width: 5%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-2 {
+  display: inline;
+  float: left;
+  width: 13.333333333333334%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-3 {
+  display: inline;
+  float: left;
+  width: 21.666666666666668%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-4 {
+  display: inline;
+  float: left;
+  width: 30%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-5 {
+  display: inline;
+  float: left;
+  width: 38.333333333333336%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-6 {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-7 {
+  display: inline;
+  float: left;
+  width: 55.00000000000001%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-8 {
+  display: inline;
+  float: left;
+  width: 63.33333333333333%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-9 {
+  display: inline;
+  float: left;
+  width: 71.66666666666667%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-10 {
+  display: inline;
+  float: left;
+  width: 80%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-11 {
+  display: inline;
+  float: left;
+  width: 88.33333333333333%;
+  margin: 0 1.6666666666666667%;
+}
+.row-12 .grid-12,
+.row-12 .grid-full {
+  display: inline;
+  float: left;
+  width: 96.66666666666667%;
+  margin: 0 1.6666666666666667%;
+}
+.row-11 {
+  display: block;
+  width: 103.63636363636364%;
+  margin: 0 -1.8181818181818181%;
+  *zoom: 1;
+}
+.row-11:before,
+.row-11:after {
+  content: "";
+  display: table;
+}
+.row-11:after {
+  clear: both;
+}
+.row-11 .grid-1 {
+  display: inline;
+  float: left;
+  width: 5.454545454545454%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-2 {
+  display: inline;
+  float: left;
+  width: 14.545454545454545%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-3 {
+  display: inline;
+  float: left;
+  width: 23.636363636363637%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-4 {
+  display: inline;
+  float: left;
+  width: 32.72727272727273%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-5 {
+  display: inline;
+  float: left;
+  width: 41.81818181818181%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-6 {
+  display: inline;
+  float: left;
+  width: 50.90909090909091%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-7 {
+  display: inline;
+  float: left;
+  width: 60%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-8 {
+  display: inline;
+  float: left;
+  width: 69.0909090909091%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-9 {
+  display: inline;
+  float: left;
+  width: 78.18181818181819%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-10 {
+  display: inline;
+  float: left;
+  width: 87.27272727272727%;
+  margin: 0 1.8181818181818181%;
+}
+.row-11 .grid-11,
+.row-11 .grid-full {
+  display: inline;
+  float: left;
+  width: 96.36363636363636%;
+  margin: 0 1.8181818181818181%;
+}
+.row-10 {
+  display: block;
+  width: 104%;
+  margin: 0 -2%;
+  *zoom: 1;
+}
+.row-10:before,
+.row-10:after {
+  content: "";
+  display: table;
+}
+.row-10:after {
+  clear: both;
+}
+.row-10 .grid-1 {
+  display: inline;
+  float: left;
+  width: 6%;
+  margin: 0 2%;
+}
+.row-10 .grid-2 {
+  display: inline;
+  float: left;
+  width: 16%;
+  margin: 0 2%;
+}
+.row-10 .grid-3 {
+  display: inline;
+  float: left;
+  width: 26%;
+  margin: 0 2%;
+}
+.row-10 .grid-4 {
+  display: inline;
+  float: left;
+  width: 36%;
+  margin: 0 2%;
+}
+.row-10 .grid-5 {
+  display: inline;
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+}
+.row-10 .grid-6 {
+  display: inline;
+  float: left;
+  width: 56.00000000000001%;
+  margin: 0 2%;
+}
+.row-10 .grid-7 {
+  display: inline;
+  float: left;
+  width: 66%;
+  margin: 0 2%;
+}
+.row-10 .grid-8 {
+  display: inline;
+  float: left;
+  width: 76%;
+  margin: 0 2%;
+}
+.row-10 .grid-9 {
+  display: inline;
+  float: left;
+  width: 86%;
+  margin: 0 2%;
+}
+.row-10 .grid-10,
+.row-10 .grid-full {
+  display: inline;
+  float: left;
+  width: 96%;
+  margin: 0 2%;
+}
+.row-9 {
+  display: block;
+  width: 104.44444444444446%;
+  margin: 0 -2.2222222222222223%;
+  *zoom: 1;
+}
+.row-9:before,
+.row-9:after {
+  content: "";
+  display: table;
+}
+.row-9:after {
+  clear: both;
+}
+.row-9 .grid-1 {
+  display: inline;
+  float: left;
+  width: 6.666666666666667%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-2 {
+  display: inline;
+  float: left;
+  width: 17.77777777777778%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-3 {
+  display: inline;
+  float: left;
+  width: 28.888888888888886%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-third {
+  display: inline;
+  float: left;
+  width: 28.888888888888886%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-4 {
+  display: inline;
+  float: left;
+  width: 40%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-5 {
+  display: inline;
+  float: left;
+  width: 51.11111111111111%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-6 {
+  display: inline;
+  float: left;
+  width: 62.22222222222222%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-7 {
+  display: inline;
+  float: left;
+  width: 73.33333333333333%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-8 {
+  display: inline;
+  float: left;
+  width: 84.44444444444444%;
+  margin: 0 2.2222222222222223%;
+}
+.row-9 .grid-9,
+.row-9 .grid-full {
+  display: inline;
+  float: left;
+  width: 95.55555555555556%;
+  margin: 0 2.2222222222222223%;
+}
+.row-8 {
+  display: block;
+  width: 105%;
+  margin: 0 -2.5%;
+  *zoom: 1;
+}
+.row-8:before,
+.row-8:after {
+  content: "";
+  display: table;
+}
+.row-8:after {
+  clear: both;
+}
+.row-8 .grid-1 {
+  display: inline;
+  float: left;
+  width: 7.5%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-2 {
+  display: inline;
+  float: left;
+  width: 20%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-3 {
+  display: inline;
+  float: left;
+  width: 32.5%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-4 {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-5 {
+  display: inline;
+  float: left;
+  width: 57.49999999999999%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-6 {
+  display: inline;
+  float: left;
+  width: 70%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-7 {
+  display: inline;
+  float: left;
+  width: 82.5%;
+  margin: 0 2.5%;
+}
+.row-8 .grid-8,
+.row-8 .grid-full {
+  display: inline;
+  float: left;
+  width: 95%;
+  margin: 0 2.5%;
+}
+.row-7 {
+  display: block;
+  width: 105.71428571428572%;
+  margin: 0 -2.857142857142857%;
+  *zoom: 1;
+}
+.row-7:before,
+.row-7:after {
+  content: "";
+  display: table;
+}
+.row-7:after {
+  clear: both;
+}
+.row-7 .grid-1 {
+  display: inline;
+  float: left;
+  width: 8.571428571428571%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-2 {
+  display: inline;
+  float: left;
+  width: 22.857142857142858%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-3 {
+  display: inline;
+  float: left;
+  width: 37.142857142857146%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-4 {
+  display: inline;
+  float: left;
+  width: 51.42857142857142%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-5 {
+  display: inline;
+  float: left;
+  width: 65.71428571428571%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-6 {
+  display: inline;
+  float: left;
+  width: 80%;
+  margin: 0 2.857142857142857%;
+}
+.row-7 .grid-7,
+.row-7 .grid-full {
+  display: inline;
+  float: left;
+  width: 94.28571428571428%;
+  margin: 0 2.857142857142857%;
+}
+.row-6 {
+  display: block;
+  width: 106.66666666666667%;
+  margin: 0 -3.3333333333333335%;
+  *zoom: 1;
+}
+.row-6:before,
+.row-6:after {
+  content: "";
+  display: table;
+}
+.row-6:after {
+  clear: both;
+}
+.row-6 .grid-1 {
+  display: inline;
+  float: left;
+  width: 10%;
+  margin: 0 3.3333333333333335%;
+}
+.row-6 .grid-2 {
+  display: inline;
+  float: left;
+  width: 26.666666666666668%;
+  margin: 0 3.3333333333333335%;
+}
+.row-6 .grid-3 {
+  display: inline;
+  float: left;
+  width: 43.333333333333336%;
+  margin: 0 3.3333333333333335%;
+}
+.row-6 .grid-4 {
+  display: inline;
+  float: left;
+  width: 60%;
+  margin: 0 3.3333333333333335%;
+}
+.row-6 .grid-5 {
+  display: inline;
+  float: left;
+  width: 76.66666666666667%;
+  margin: 0 3.3333333333333335%;
+}
+.row-6 .grid-6,
+.row-6 .grid-full {
+  display: inline;
+  float: left;
+  width: 93.33333333333333%;
+  margin: 0 3.3333333333333335%;
+}
+.row-5 {
+  display: block;
+  width: 108%;
+  margin: 0 -4%;
+  *zoom: 1;
+}
+.row-5:before,
+.row-5:after {
+  content: "";
+  display: table;
+}
+.row-5:after {
+  clear: both;
+}
+.row-5 .grid-1 {
+  display: inline;
+  float: left;
+  width: 12%;
+  margin: 0 4%;
+}
+.row-5 .grid-2 {
+  display: inline;
+  float: left;
+  width: 32%;
+  margin: 0 4%;
+}
+.row-5 .grid-3 {
+  display: inline;
+  float: left;
+  width: 52%;
+  margin: 0 4%;
+}
+.row-5 .grid-4 {
+  display: inline;
+  float: left;
+  width: 72%;
+  margin: 0 4%;
+}
+.row-5 .grid-5,
+.row-5 .grid-full {
+  display: inline;
+  float: left;
+  width: 92%;
+  margin: 0 4%;
+}
+.row-4 {
+  display: block;
+  width: 110.00000000000001%;
+  margin: 0 -5%;
+  *zoom: 1;
+}
+.row-4:before,
+.row-4:after {
+  content: "";
+  display: table;
+}
+.row-4:after {
+  clear: both;
+}
+.row-4 .grid-1 {
+  display: inline;
+  float: left;
+  width: 15%;
+  margin: 0 5%;
+}
+.row-4 .grid-2 {
+  display: inline;
+  float: left;
+  width: 40%;
+  margin: 0 5%;
+}
+.row-4 .grid-3 {
+  display: inline;
+  float: left;
+  width: 65%;
+  margin: 0 5%;
+}
+.row-4 .grid-4,
+.row-4 .grid-full {
+  display: inline;
+  float: left;
+  width: 90%;
+  margin: 0 5%;
+}
+.row-3 {
+  display: block;
+  width: 113.33333333333333%;
+  margin: 0 -6.666666666666667%;
+  *zoom: 1;
+}
+.row-3:before,
+.row-3:after {
+  content: "";
+  display: table;
+}
+.row-3:after {
+  clear: both;
+}
+.row-3 .grid-1 {
+  display: inline;
+  float: left;
+  width: 20%;
+  margin: 0 6.666666666666667%;
+}
+.row-3 .grid-2 {
+  display: inline;
+  float: left;
+  width: 53.333333333333336%;
+  margin: 0 6.666666666666667%;
+}
+.row-3 .grid-3,
+.row-3 .grid-full {
+  display: inline;
+  float: left;
+  width: 86.66666666666667%;
+  margin: 0 6.666666666666667%;
+}
+.row-2 {
+  display: block;
+  width: 120%;
+  margin: 0 -10%;
+  *zoom: 1;
+}
+.row-2:before,
+.row-2:after {
+  content: "";
+  display: table;
+}
+.row-2:after {
+  clear: both;
+}
+.row-2 .grid-1 {
+  display: inline;
+  float: left;
+  width: 30%;
+  margin: 0 10%;
+}
+.row-2 .grid-2,
+.row-2 .grid-full {
+  display: inline;
+  float: left;
+  width: 80%;
+  margin: 0 10%;
+}
+.sc-player {
+  position: relative;
+  margin-bottom: 20px;
+}
+.sc-player a {
+  text-decoration: none;
+  color: #fff;
+}
+.sc-player ol,
+.sc-player li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+/* Artworks */
+.sc-player .sc-artwork-list {
+  float: left;
+  width: 50%;
+  margin-bottom: 3%;
+  background-color: transparent;
+  list-style-type: none;
+  position: relative;
+  height: 100%;
+}
+.sc-player .sc-artwork-list li {
+  list-style-type: none;
+  display: none;
+}
+.sc-player .sc-artwork-list li.active {
+  list-style-type: none;
+  display: block;
+}
+.sc-player .sc-artwork-list li img,
+.sc-player .sc-artwork-list li div {
+  list-style-type: none;
+  width: 100%;
+  height: auto;
+}
+/* controls */
+.sc-player .sc-controls {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: 8%;
+  left: 25%;
+}
+@media all and (min-width: 32em) {
+  .sc-player .sc-controls {
+    margin-top: 14%;
+  }
+}
+@media screen and (min-width: 38em) {
+  .sc-player .sc-controls {
+    margin-top: 18%;
+  }
+}
+.sc-player .sc-controls a {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.sc-player .sc-controls a {
+  color: transparent;
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/play.png");
+}
+.sc-player .sc-controls a:hover {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/play.png");
+}
+.sc-player .sc-controls a.sc-pause {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/play.png");
+}
+.sc-player .sc-controls a.sc-pause:hover {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/play.png");
+}
+.sc-player.playing .sc-controls a.sc-pause {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/pause.png");
+}
+.sc-player.playing .sc-controls a.sc-pause:hover {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/pause.png");
+}
+.sc-scrubber .sc-time-indicators {
+  background: #333;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+}
+.sc-player .sc-controls a.sc-pause {
+  display: none;
+}
+.sc-player.playing .sc-controls a.sc-play {
+  display: none;
+}
+.sc-player.playing .sc-controls a.sc-pause {
+  display: block;
+}
+/* scrubber */
+.sc-scrubber {
+  position: relative;
+  float: right;
+  width: 47%;
+  margin-left: 3%;
+  margin-top: 50px;
+  margin-bottom: 1%;
+  background-color: #ffffff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+@media screen and (min-width: 38em) {
+  .sc-scrubber {
+    margin-top: 20px;
+  }
+}
+.sc-scrubber .sc-time-span {
+  height: 30px;
+  margin: 5px;
+  position: relative;
+}
+.sc-scrubber .sc-buffer,
+.sc-scrubber .sc-played {
+  height: 30px;
+  position: absolute;
+  top: 0;
+}
+.sc-scrubber .sc-time-indicators {
+  position: absolute;
+  left: 0;
+  top: -55px;
+}
+@media screen and (min-width: 38em) {
+  .sc-scrubber .sc-time-indicators {
+    left: auto;
+    right: 0;
+    top: -30px;
+  }
+}
+.sc-scrubber .sc-time-span {
+  background-color: #666;
+}
+.sc-scrubber .sc-volume-slider {
+  background-color: #e5e5e5;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.sc-scrubber .sc-volume-slider .sc-volume-status {
+  background-color: #666;
+  border-right: 1px solid #22B573;
+}
+.sc-scrubber .sc-waveform-container {
+  z-index: 800;
+  width: 100%;
+  position: absolute;
+}
+.sc-scrubber .sc-time-span img {
+  height: 30px;
+  width: 100%;
+  /*background: -moz-linear-gradient(top, black, #22B573 0px, #7decba 90%);
+		background: -webkit-gradient(linear, left top, left 90%, from(black), color-stop(0%, #22B573), to(#7decba));*/
+}
+.sc-scrubber .sc-buffer,
+.sc-scrubber .sc-scrubber .sc-played {
+  background-color: #333;
+  z-index: 1;
+  position: absolute;
+}
+.sc-scrubber .sc-played {
+  background: #333;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 799;
+}
+/* volume control */
+.sc-volume-slider {
+  top: -25px;
+  left: 0px;
+  position: absolute;
+  width: 110px;
+  height: 12px;
+  background-color: white;
+}
+.sc-volume-slider .sc-volume-status {
+  position: absolute;
+  width: 0%;
+  height: 10px;
+  top: 1px;
+  left: 1px;
+}
+/* tracks */
+/* Track listings*/
+.sc-player ol.sc-trackslist {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: auto;
+}
+.sc-player ol.sc-trackslist li {
+  float: left;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1%;
+  padding: 2%;
+  background: #333;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-transition: background 0.3s ease-in;
+}
+.sc-player ol.sc-trackslist li:hover {
+  background: #333;
+  background: rgba(255, 255, 255, 0.3);
+}
+.sc-player ol.sc-trackslist li.active {
+  background: #333;
+  background: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.sc-player ol.sc-trackslist li.active a {
+  color: #fff;
+}
+.sc-track-duration {
+  float: right;
+}
+/* Track info*/
+.sc-player .sc-info {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 1% 3%;
+}
+.sc-player .sc-info h3 {
+  text-align: left;
+}
+.sc-player .sc-info h4,
+.sc-player .sc-info p {
+  display: none;
+}
+.sc-player .sc-info .sc-info a {
+  color: #fff;
+}
+.sc-player .sc-info-toggle,
+.sc-player .sc-info-close {
+  display: none;
+}
+/* utilities */
+.sc-player .hidden {
+  display: none;
+}
+.sc-player-engine-container {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 2px;
+  left: 2px;
+}
+.sc-player .sc-info-toggle {
+  background: #22B573;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+}
+.sc-player .sc-info-toggle:hover {
+  background: #333;
+  color: #fff;
+}
+.sc-player .sc-info-close {
+  background: #22B573;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "metallophile-sp8", sans-serif;*/
+  /*font-family: 'Anonymous Pro';*/
+  font-family: 'Francois One', sans-serif;
+  font-size: 90%;
+  background: #191919;
+  margin: 0;
+}
+@media screen and (min-width: 38em) {
+  body {
+    font-size: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 1em;
+  padding: 1em;
+  border-top: 1px dotted #191919;
+  text-align: center;
+}
+.about {
+  -webkit-transform: rotate(-45deg);
+  background: #191919;
+  background: rgba(94, 211, 250, 0.8);
+  margin-left: -2500px;
+  width: 5000px;
+  height: 2000px;
+  left: 50%;
+}
+.content {
+  width: 100%;
+  position: relative;
+}
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/* TYPOGRAPHY*
+----------------------------------------------------------*/
+h1,
+h2,
+h3 {
+  font-family: 'Francois One', sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .25em;
+}
+h1 span,
+h2 span,
+h3 span {
+  display: block;
+  font-size: 0.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.logo {
+  padding-top: 22%;
+  padding-bottom: 22%;
+}
+a {
+  color: crimson;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+em {
+  font-style: italic;
+}
+/* ELEMENTS*
+----------------------------------------------------------*/
+hr {
+  float: left;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px dotted #191919;
+  margin: 2em auto 2.5em;
+}
+.bg-white {
+  background: #ffffff;
+  background-image: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/bg-white.jpg");
+  color: #191919;
+}
+.bg-black {
+  background: #191919;
+  color: #ffffff;
+}
+.button,
+input[type=submit] {
+  cursor: pointer;
+  display: block;
+  padding: .5em;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #191919;
+  width: 250px;
+  margin: 0 auto 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "metallophile-sp8", sans-serif;
+  font-weight: 300;
+}
+.button:hover,
+input[type=submit]:hover {
+  background: #191919;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #191919;
+}
+form {
+  text-align: center;
+}
+form input[type=submit] {
+  font-size: 1.02em;
+}
+.arrow-down {
+  /*position: absolute;
+  bottom: 6%;
+  left: 50%;*/
+  display: block;
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/arrow-down.png");
+  background-size: cover;
+  width: 50px;
+  height: 16px;
+  margin: 0 auto;
+  /*margin-left: -25px;*/
+  text-indent: -9999px;
+  text-align: center;
+}
+/* LAYOUT*
+----------------------------------------------------------*/
+.parallax {
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 38em) {
+  .parallax {
+    background-position: fixed;
+  }
+}
+section[role=banner] {
+  padding-bottom: 50%;
+  margin-bottom: 1em;
+}
+.dark {
+  background: #191919;
+}
+header nav {
+  position: fixed;
+  background: #191919;
+  background: rgba(25, 25, 25, 0.3);
+  z-index: 100;
+  background: #f8f8f8;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* NAVIGATION *
+----------------------------------------------------------*/
+nav[role=navigation] {
+  transition: all 0.3s ease-out;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 100%;
+}
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em 0;
+}
+@media screen and (min-width: 38em) {
+  nav[role=navigation] li a {
+    text-indent: 0;
+  }
+}
+nav[role=navigation] ul {
+  margin: 0;
+  border: 0;
+}
+nav[role=navigation] li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 25%;
+}
+.album-artwork {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+}
+@media screen and (min-width: 38em) {
+  section {
+    /*padding-top: 4em;
+    padding-bottom: 4em;
+    min-height: 100%;*/
+  }
+}
+.mobile-text {
+  display: block;
+}
+@media screen and (min-width: 38em) {
+  .mobile-text {
+    display: none;
+  }
+}
+.desktop-text {
+  display: none;
+}
+@media screen and (min-width: 38em) {
+  .desktop-text {
+    display: block;
+    font-size:26px;
+  }
+}
+/* section1 *
+----------------------------------------------------------*/
+.section1 {
+  /*padding-top: 0em;
+  padding-bottom: 0em;*/
+  background: #ffffff;
+  /*background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/photo-6-small.jpg") no-repeat center top;*/
+
+  /*background: url('../img/hero-small.jpg');*/
+  /*background: url('../img/hero-small-2.jpg');*/
+  /*background: url('../img/hero-4.jpg');*/
+  background: url(../img/glffmfpdijhfmcdl.png');
+  background-size: contain;
+  background-position: 0 60px !important;
+  background-repeat: no-repeat;
+}
+
+.soundCloudSongTitle {
+  font-size:20px;
+  padding-bottom:7px;
+}
+
+/* ipad */
+/*@media screen and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+{ 
+  background: none;
+}*/
+/* ipad */
+@media screen and (min-width: 900px) {
+  .section1 {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .song {
+    font-size:15px;
+    text-align:left;
+    float:left;
+    width:100%;
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+}
+
+/*@media screen and (min-width: 38em) {
+  .section1 {
+    //background: url('../img/hero-4.jpg') no-repeat center top;
+    background:none;
+  }
+}*/
+
+.section1 .content {
+  height: 100%;
+  position: relative;
+  
+}
+.section1 .content .grid-8 {
+  margin-top: 45%;
+}
+@media all and (min-width: 32em) {
+  .section1 .content .grid-8 {
+    margin-top: 30%;
+  }
+}
+@media screen and (min-width: 38em) {
+  .section1 .content .grid-8 {
+    margin-top: 22%;
+  }
+}
+/* SHOW *
+----------------------------------------------------------*/
+
+#songlist {
+  background: url("../img/audience.png") no-repeat center top;
+  background-size: cover;
+}
+
+.section3 {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/photo-402-small.jpg") no-repeat center top;
+  background-size: cover;
+}
+@media screen and (min-width: 38em) {
+  .section3 {
+    background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/photo-402.jpg") no-repeat center top;
+  }
+}
+.show-logo {
+  display: inline;
+  float: left;
+  width: 63.33333333333333%;
+  margin: 0 1.6666666666666667%;
+  margin-left: 18.333333333333332%;
+  margin-right: 18.333333333333332%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 38em) {
+  .show-logo {
+    display: inline;
+    float: left;
+    width: 30%;
+    margin: 0 1.6666666666666667%;
+    margin-left: 34.99999999999999%;
+    margin-right: 34.99999999999999%;
+    margin-bottom: 30px;
+  }
+}
+.show-date,
+.show-time,
+.show-402,
+.show-address,
+.show-omaha {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 38em) {
+  .show-date,
+  .show-time,
+  .show-402,
+  .show-address,
+  .show-omaha {
+    display: inline;
+    float: left;
+    width: 21.666666666666668%;
+    margin: 0 1.6666666666666667%;
+  }
+}
+.show-tickets,
+.show-buy {
+  display: inline;
+  float: left;
+  width: 38.333333333333336%;
+  margin: 0 1.6666666666666667%;
+}
+@media screen and (min-width: 38em) {
+  .show-tickets,
+  .show-buy {
+    display: inline;
+    float: left;
+    width: 30%;
+    margin: 0 1.6666666666666667%;
+  }
+}
+.show-tickets {
+  margin-left: 9.999999999999998%;
+}
+@media screen and (min-width: 38em) {
+  .show-tickets {
+    margin-left: 18.333333333333332%;
+  }
+}
+.show-buy {
+  margin-right: 9.999999999999998%;
+  padding: 1em;
+}
+@media screen and (min-width: 38em) {
+  .show-buy {
+    margin-right: 18.333333333333332%;
+  }
+}
+/* VIDEO *
+----------------------------------------------------------*/
+.section5 {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/video-bg-small.jpg") no-repeat center top;
+  background-size: cover;
+}
+@media screen and (min-width: 38em) {
+  .section5 {
+    background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/video-bg-1.jpg") no-repeat center top;
+  }
+}
+/* ABOUT *
+----------------------------------------------------------*/
+.section6 {
+  background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/photo-bw-small.jpg") no-repeat center top;
+  background-size: cover;
+  padding-bottom: 30%;
+  min-height: 450px;
+}
+@media screen and (min-width: 38em) {
+  .section6 {
+    background: url("http://www.theforestersmusic.com/v3/wp-content/themes/v3-modfied/css/../images/photo-bw.jpg") no-repeat center top;
+  }
+}
+#about {
+  padding-bottom: 20px;
+}
+</style>
+	
