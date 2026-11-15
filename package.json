@@ -1,0 +1,32 @@
+{
+  "name": "radio-remedy-rebuild",
+  "version": "1.0.0",
+  "description": "Radio Remedy static website",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "check": "html-validate index.html && node --check assets/site.js",
+    "test": "playwright test",
+    "preview": "python3 -m http.server 4173 --directory dist --bind 127.0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radioremedy/radioremedy.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/radioremedy/radioremedy.github.io/issues"
+  },
+  "homepage": "https://github.com/radioremedy/radioremedy.github.io#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1",
+    "html-validate": "^11.21.1",
+    "sharp": "^0.35.5"
+  },
+  "private": true,
+  "engines": {
+    "node": "^22.22.0 || >=24.8.0"
+  }
+}

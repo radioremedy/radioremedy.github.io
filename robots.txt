@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://radioremedy.github.io/sitemap.xml
