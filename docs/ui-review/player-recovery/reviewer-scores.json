@@ -1,0 +1,42 @@
+{
+  "reviewer": {
+    "identity": "/root/ui_reviewer",
+    "method": "independent-agent"
+  },
+  "scores": {
+    "hierarchy": 4,
+    "journeys": 4,
+    "responsive": 4,
+    "accessibility": 4,
+    "consistency": 4,
+    "states": 4,
+    "brand": 4
+  },
+  "blockers": [],
+  "mean": 4.0,
+  "evidence_opened": [
+    "test-results/mobile-390-first-screen.png",
+    "test-results/mobile-390.png",
+    "test-results/mobile-390-menu.png",
+    "test-results/mobile-390-loading.png",
+    "test-results/mobile-390-slow.png",
+    "test-results/mobile-390-loaded.png",
+    "test-results/mobile-390-error.png",
+    "test-results/mobile-320-slow.png",
+    "test-results/desktop-first-screen.png",
+    "test-results/desktop.png",
+    "test-results/desktop-loading.png",
+    "test-results/desktop-slow.png",
+    "test-results/desktop-loaded.png",
+    "test-results/desktop-error.png",
+    "test-results/desktop-zoom-200.png",
+    "test-results/reflow-720-contact.png"
+  ],
+  "visual": "passed",
+  "reviewed_utc": "2026-11-16T22:59:03Z",
+  "limitations": [
+    "Synthetic iframe fixtures; actual external playback not verified",
+    "Supplemental CSS zoom/equivalent viewport inspected; native browser zoom not tested"
+  ],
+  "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+}

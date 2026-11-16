@@ -1,0 +1,206 @@
+2026-11-16 UTC, local http://127.0.0.1:4173, source aa07350.
+Baseline bootstrap: all executables available.
+npm run check: PASS (html-validate and node --check)
+npm run build: PASS
+LD_LIBRARY_PATH=/var/lib/bazworker/.local/lib/bazfit-browser/usr/lib/x86_64-linux-gnu npm test
+
+> radio-remedy-rebuild@1.0.0 test
+> playwright test
+
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:41] "GET / HTTP/1.1" 200 -
+
+Running 24 tests using 1 worker
+
+(node:90419) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:44] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:44] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:44] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:44] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:45] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓   1 [mobile-320] › tests/site.spec.mjs:5:1 › content, navigation, layout and accessibility (4.7s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:49] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:49] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:49] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:49] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:49] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓   2 [mobile-320] › tests/site.spec.mjs:30:1 › players load only on request and retain original recording IDs (1.6s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:51] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:51] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:51] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:51] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:51] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET / HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/radio-remedy-480.webp HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/site.css HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/site.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/radio-icon-192.png HTTP/1.1" 304 -
+  ✓   3 [mobile-320] › tests/site.spec.mjs:41:1 › first screen, menu keyboard behavior, and reduced motion (3.6s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:54] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/favicon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/apple-touch-icon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/radio-icon-512.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/share-radio.png HTTP/1.1" 200 -
+  ✓   4 [mobile-320] › tests/site.spec.mjs:72:1 › original radio icons, manifest and share assets resolve (647ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:55] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓   5 [mobile-320] › tests/site.spec.mjs:80:1 › navigation remains usable without JavaScript (652ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:56] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:56] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:56] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:56] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:57:56] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓   6 [mobile-320] › tests/site.spec.mjs:90:1 › player feedback, timeout, recovery and error states (4.8s)
+(node:90661) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:03] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:03] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:03] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:03] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:03] "GET /assets/site.js HTTP/1.1" 200 -
+  ✓   7 [mobile-375] › tests/site.spec.mjs:5:1 › content, navigation, layout and accessibility (4.6s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:07] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:07] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:07] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:07] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:07] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓   8 [mobile-375] › tests/site.spec.mjs:30:1 › players load only on request and retain original recording IDs (1.6s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:09] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:09] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:09] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:09] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:09] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET / HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/site.css HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/site.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/radio-remedy-480.webp HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/radio-icon-192.png HTTP/1.1" 304 -
+  ✓   9 [mobile-375] › tests/site.spec.mjs:41:1 › first screen, menu keyboard behavior, and reduced motion (3.7s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:12] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/favicon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/apple-touch-icon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/radio-icon-512.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/share-radio.png HTTP/1.1" 200 -
+  ✓  10 [mobile-375] › tests/site.spec.mjs:72:1 › original radio icons, manifest and share assets resolve (666ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:13] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+  ✓  11 [mobile-375] › tests/site.spec.mjs:80:1 › navigation remains usable without JavaScript (693ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:14] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:14] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:14] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:14] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:14] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  12 [mobile-375] › tests/site.spec.mjs:90:1 › player feedback, timeout, recovery and error states (4.8s)
+(node:90897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:21] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:21] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:21] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:21] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:21] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  13 [mobile-390] › tests/site.spec.mjs:5:1 › content, navigation, layout and accessibility (5.1s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:26] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:26] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:26] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:26] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:26] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  14 [mobile-390] › tests/site.spec.mjs:30:1 › players load only on request and retain original recording IDs (1.7s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:27] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:27] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:27] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:27] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:27] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  15 [mobile-390] › tests/site.spec.mjs:41:1 › first screen, menu keyboard behavior, and reduced motion (3.7s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:31] "GET /assets/favicon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/apple-touch-icon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/radio-icon-512.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/share-radio.png HTTP/1.1" 200 -
+  ✓  16 [mobile-390] › tests/site.spec.mjs:72:1 › original radio icons, manifest and share assets resolve (733ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:32] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  17 [mobile-390] › tests/site.spec.mjs:80:1 › navigation remains usable without JavaScript (633ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:33] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:33] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:33] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:33] "GET /assets/radio-remedy-480.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:33] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  18 [mobile-390] › tests/site.spec.mjs:90:1 › player feedback, timeout, recovery and error states (5.0s)
+(node:91122) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:39] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:40] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:40] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:40] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:40] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  19 [desktop] › tests/site.spec.mjs:5:1 › content, navigation, layout and accessibility (9.5s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:49] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:49] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:49] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:49] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:49] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  20 [desktop] › tests/site.spec.mjs:30:1 › players load only on request and retain original recording IDs (2.1s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:51] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:51] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:51] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:51] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:51] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  21 [desktop] › tests/site.spec.mjs:41:1 › first screen, menu keyboard behavior, and reduced motion (1.3s)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:52] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:52] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:52] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:52] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:52] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/favicon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/apple-touch-icon.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/site.webmanifest HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/radio-icon-512.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/share-radio.png HTTP/1.1" 200 -
+  ✓  22 [desktop] › tests/site.spec.mjs:72:1 › original radio icons, manifest and share assets resolve (603ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:53] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  23 [desktop] › tests/site.spec.mjs:80:1 › navigation remains usable without JavaScript (677ms)
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:54] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:54] "GET /assets/site.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:54] "GET /assets/radio-remedy-960.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:54] "GET /assets/site.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [16/Nov/2026 22:58:54] "GET /assets/radio-icon-192.png HTTP/1.1" 200 -
+  ✓  24 [desktop] › tests/site.spec.mjs:90:1 › player feedback, timeout, recovery and error states (8.1s)
+
+  24 passed (1.3m)
+
+Additional existing Chromium script: PASS 200% CSS zoom overflow and 720px equivalent reflow; contact disclosure/navigation/focus. Native browser zoom and physical devices not tested.
+Direct SoundCloud audio, YouTube playback and email delivery not tested. Cross-origin error event fixture is synthetic; timeout is primary network recovery.
+Git diff --check: PASS. No new dependencies installed.
+WCAG relative luminance calculation: ink/bg 16.37:1; muted/panel 8.61:1; accent/bg 16.82:1; load control border/panel 3.83:1. Disabled control exempt. Existing divider is not an interactive boundary.

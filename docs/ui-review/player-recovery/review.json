@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3",
+  "author": "/root",
+  "visual": "passed",
+  "checks": {
+    "build": "passed",
+    "behavior": "passed",
+    "accessibility": "passed"
+  },
+  "reviewer": {
+    "identity": "/root/ui_reviewer",
+    "method": "independent-agent"
+  },
+  "scores": {
+    "hierarchy": 4,
+    "journeys": 4,
+    "responsive": 4,
+    "accessibility": 4,
+    "consistency": 4,
+    "states": 4,
+    "brand": 4
+  },
+  "blockers": [],
+  "artifacts": [
+    {
+      "path": "checks.txt",
+      "kind": "checks",
+      "sha256": "9090dd94fe4d0d63754f96cd119203d3b016bcb917972e60c59017e782a1d3ec"
+    },
+    {
+      "path": "critique.md",
+      "kind": "critique",
+      "sha256": "5a49226ea84de0a4133fa919540c94561773b8ad6b82a4a785ec2fa55ab4c902"
+    },
+    {
+      "path": "design.md",
+      "kind": "design",
+      "sha256": "a1f5f78caa28278ebf02e58ff76e48d62c65292c59502384136a67773c399ea0"
+    },
+    {
+      "path": "desktop-error.png",
+      "kind": "screenshot",
+      "sha256": "0f4929fd62fb9c1e0a54193487a3b979bd44ebdd2b0d322ccf182c22164e3903",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-error",
+      "captured_utc": "2026-11-16T22:59:01.932338+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop-first-screen.png",
+      "kind": "screenshot",
+      "sha256": "bc54b453b111367bf12ae7c9950b0004b9f0a732ddaaddf18d7269f5dc3e427c",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-first-screen",
+      "captured_utc": "2026-11-16T22:58:52.625780+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop-loaded.png",
+      "kind": "screenshot",
+      "sha256": "c3b5f32b0a10f8a8ab084a27545a1d7a8d9ae452349f8e7649f4d57a4a16b016",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-loaded",
+      "captured_utc": "2026-11-16T22:59:01.448309+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop-loading.png",
+      "kind": "screenshot",
+      "sha256": "077d0471f56a2278bf2e9e7e0c4f88dd115029e4454ad7918c042d1ee5683c45",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-loading",
+      "captured_utc": "2026-11-16T22:58:55.966979+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop-slow.png",
+      "kind": "screenshot",
+      "sha256": "f1775ce34105c03578ea196786689e74e8858cef732e8e24292e650df0c70aac",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-slow",
+      "captured_utc": "2026-11-16T22:59:01.088287+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop-zoom-200.png",
+      "kind": "screenshot",
+      "sha256": "06a9a9cbecffec2b29d2e294fb99460c01c562a82d0e62af599dad5aedfd40cc",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop-zoom-200",
+      "captured_utc": "2026-11-16T22:59:40.482784+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "desktop.png",
+      "kind": "screenshot",
+      "sha256": "42cc5f039a3bbca7e0b604824bdc17da80df25ee196611ceb9780dc17c56d1bf",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "inspected": true,
+      "route_state": "/ desktop",
+      "captured_utc": "2026-11-16T22:58:49.073571+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-320-slow.png",
+      "kind": "screenshot",
+      "sha256": "0d6b04ac562d5465cc79476ec872e8fe4e1f673d1f48630a0468a0df39e9b6c0",
+      "viewport": "mobile",
+      "width": 320,
+      "height": 568,
+      "inspected": true,
+      "route_state": "/ mobile-320-slow",
+      "captured_utc": "2026-11-16T22:57:59.651861+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-error.png",
+      "kind": "screenshot",
+      "sha256": "817f9bc2c56c6b911b83edf512df9961f5ef8ad5cc73cde286ef1712fb5ea653",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-error",
+      "captured_utc": "2026-11-16T22:58:37.576906+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-first-screen.png",
+      "kind": "screenshot",
+      "sha256": "9bcdb05180cbb850b5e22f0d84066901ba0c819bea4112cdfc405b1e921157d7",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-first-screen",
+      "captured_utc": "2026-11-16T22:58:31.257549+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-loaded.png",
+      "kind": "screenshot",
+      "sha256": "b1e8ad28d5f4ddc0b278ad973d8a9496cc37b09db82321d81fb482b4fa8d7203",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-loaded",
+      "captured_utc": "2026-11-16T22:58:37.278889+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-loading.png",
+      "kind": "screenshot",
+      "sha256": "d434c0dc0b0dbaeb196b28ca05f5689cd28dbc88dae2c5fd950b9395511db8f7",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-loading",
+      "captured_utc": "2026-11-16T22:58:33.656684+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-menu.png",
+      "kind": "screenshot",
+      "sha256": "eb5585ab9f73a882481dadb9c0339869b9a11e6b5f1b3aee8999e0883c678af8",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-menu",
+      "captured_utc": "2026-11-16T22:58:28.491395+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390-slow.png",
+      "kind": "screenshot",
+      "sha256": "c8cdfccafb2643ebefc3c1d4875b083af6f920cf06a01b4989c9cd679a67dd36",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390-slow",
+      "captured_utc": "2026-11-16T22:58:37.008874+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "mobile-390.png",
+      "kind": "screenshot",
+      "sha256": "ed08ef5eaf86831cf3862e7f7002a5214e7cd40621577cdd72f236c30439c651",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "inspected": true,
+      "route_state": "/ mobile-390",
+      "captured_utc": "2026-11-16T22:58:25.723242+00:00",
+      "url": "http://127.0.0.1:4173/",
+      "revision": "aa073508438bac308318f52bc9b1b39b75fd80a3"
+    },
+    {
+      "path": "reflow-720-contact.png",
+      "kind": "supplemental-screenshot",
+      "sha256": "f6ad99fba3ab9c278f530a265d165fad5a01c3f8cd272318c00d1efc7a9eca06"
+    },
+    {
+      "path": "reviewer-scores.json",
+      "kind": "metadata",
+      "sha256": "3dc4ca03fbeaac928dfeaa4df30f03de682f679ce89ccd19a617162577e982d3"
+    }
+  ]
+}
