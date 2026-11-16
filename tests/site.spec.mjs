@@ -86,3 +86,40 @@ test('navigation remains usable without JavaScript', async ({browser}) => {
  await expect(page.locator('#watch a')).toHaveAttribute('href','https://www.youtube.com/@radioremedyrocks1382');
  await context.close();
 });
+
+test('player feedback, timeout, recovery and error states', async ({page}) => {
+ await page.clock.install();
+ let release;
+ await page.route('https://w.soundcloud.com/**', async route => {
+  await new Promise(resolve => { release=resolve; });
+  await route.fulfill({contentType:'text/html',body:'<html lang="en"><title>Player fixture</title><body>Press play</body></html>'});
+ });
+ await page.goto('/');
+ const player=page.locator('.player').first();
+ const button=player.getByRole('button');
+ await button.click();
+ await expect(player.getByRole('status')).toHaveText('Connecting to SoundCloud…');
+ await expect(button).toBeDisabled();
+ await player.scrollIntoViewIfNeeded();
+ await page.screenshot({path:`test-results/${test.info().project.name}-loading.png`});
+ await page.clock.fastForward(12001);
+ await expect(player.getByRole('status')).toContainText('taking longer');
+ await expect(button).toBeEnabled();
+ expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+ await page.screenshot({path:`test-results/${test.info().project.name}-slow.png`});
+ await expect(page.locator('.soundcloud-link').first()).toBeVisible();
+ release();
+ await expect(player.getByRole('status')).toContainText('Player opened');
+ await page.screenshot({path:`test-results/${test.info().project.name}-loaded.png`});
+ await page.unroute('https://w.soundcloud.com/**');
+ await page.route('https://w.soundcloud.com/**',route=>route.fulfill({contentType:'text/html',body:'<html lang="en"><title>Retry fixture</title><body>Retry succeeded</body></html>'}));
+ await button.click();
+ await expect(player.locator('iframe')).toHaveCount(1);
+ await expect(player.getByRole('status')).toContainText('Player opened');
+ // Browsers do not reliably emit cross-origin network errors: timeout is the real recovery path.
+ await player.locator('iframe').dispatchEvent('error');
+ await expect(player.getByRole('status')).toContainText('Couldn’t open');
+ await page.screenshot({path:`test-results/${test.info().project.name}-error.png`});
+ await button.click();
+ await expect(player.getByRole('status')).toContainText('Player opened');
+});
