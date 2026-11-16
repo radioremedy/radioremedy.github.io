@@ -41,3 +41,12 @@ export LD_LIBRARY_PATH="/var/lib/bazworker/.local/lib/bazfit-browser/usr/lib/x86
 ```
 
 These are local session settings; no system services or shell startup files were changed. Other machines with Playwright's browser dependencies installed do not need this library path.
+
+## Owner feedback — 2026-11-16
+
+- Preserved `img/glffmfpdijhfmcdl.png` unchanged. Its orange radio now appears in header/footer in place of the unrelated star, as well as the existing hero/favicon. `npm run images` also generates Apple touch (180), manifest (192/512) and uncropped social/share (1200×630) PNGs. The manifest uses browser display mode; no service worker or offline/installability claim.
+- Replaced stacked mobile navigation with a native Menu disclosure and 48px menu links. Enter/Space and Tab work natively; Escape restores focus to Menu, and choosing a section closes the menu and moves focus there. Navigation remains functional without JavaScript. Desktop retains inline navigation.
+- Compact mobile hero keeps the radio, readable headline and Listen action in the first screen; secondary hero footer is omitted on mobile. No new animation; reduced-motion override retained.
+- Final `npm run build`, `npm run check`, `npm test`, and `git diff --check` passed. All 20 Chromium tests passed across 320×568, 375×667, 390×844 and 1440×1000. Tests cover first-screen bounds, mobile artwork/headline separation, horizontal overflow, keyboard menu/focus, no-JS navigation, asset resolution, original content and recording IDs. Axe reported zero violations for the page and open mobile menu.
+- Reviewed first-screen screenshots at all four widths and the 320px open menu. Screenshots and full-page captures are in ignored `test-results/` and regenerate with `npm test`.
+- Limitations: Chromium emulation only; no physical iOS/Safari/Firefox or human screen-reader testing. SoundCloud remains stubbed in tests. Social crawlers and Apple home-screen rendering cannot be verified against the un-deployed branch. Preview is VM-local at `http://127.0.0.1:4173/` while `npm run preview` runs; no hosted preview/deployment was created.

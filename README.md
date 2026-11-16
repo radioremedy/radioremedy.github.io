@@ -23,7 +23,7 @@ npm run preview
 
 Open http://127.0.0.1:4173. The build copies only the public site files to `dist/`. Browser tests run against that output at mobile and desktop sizes. They check the content baseline, fragment targets, horizontal overflow, keyboard skip link, no initial external requests, click-to-load embeds and axe accessibility. Player tests stub SoundCloud: they verify integration URLs, not availability or playback on the external service.
 
-`npm run images` regenerates responsive WebP artwork and favicon using the existing `img/glffmfpdijhfmcdl.png`. Keep the original for editing. Only the optimized artwork ships in the build. Original unused images remain in Git for preservation, but are excluded from `dist/`.
+`npm run images` regenerates responsive WebP artwork, favicon, Apple touch icon, manifest icons and share image using the existing `img/glffmfpdijhfmcdl.png`. Keep the original for editing. Header and footer use the same orange radio, replacing the unrelated star. The mobile Menu is a native disclosure with keyboard and no-JavaScript support; Escape closes it and returns focus. Only the optimized artwork ships in the build. Original unused images remain in Git for preservation, but are excluded from `dist/`.
 
 ## Content and rights
 

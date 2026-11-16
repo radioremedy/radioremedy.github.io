@@ -9,3 +9,20 @@ document.querySelectorAll('[data-load-player]').forEach((button) => {
     frame.focus();
   });
 });
+
+const navigation = document.querySelector('.navigation');
+navigation.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navigation.open) {
+    navigation.open = false;
+    navigation.querySelector('summary').focus();
+  }
+});
+navigation.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navigation.open = false;
+    // Keep keyboard focus at the chosen section after the disclosure closes.
+    const section = document.querySelector(link.getAttribute('href'));
+    section.setAttribute('tabindex', '-1');
+    section.focus({ preventScroll: true });
+  });
+});

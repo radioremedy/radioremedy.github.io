@@ -18,6 +18,7 @@ test('content, navigation, layout and accessibility',async({page})=>{
  expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
  await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Skip to content'})).toBeFocused();
  await page.keyboard.press('Enter');await expect(page.locator('main')).toBeFocused();
+ if (test.info().project.name !== 'desktop') await page.locator('summary').click();
  await page.getByRole('navigation').getByRole('link',{name:'Contact',exact:true}).click();await expect(page).toHaveURL(/#contact$/);
  expect(errors).toEqual([]);
  await page.screenshot({path:`test-results/${test.info().project.name}.png`,fullPage:true});
@@ -31,4 +32,51 @@ test('players load only on request and retain original recording IDs',async({pag
    await expect(article.locator('iframe')).toHaveAttribute('src',`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&auto_play=false&hide_related=false`);
    await expect(article.locator('iframe')).toHaveAttribute('title',`SoundCloud: ${title}`);
  }
+});
+
+test('first screen, menu keyboard behavior, and reduced motion', async ({page}) => {
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await page.goto('/');
+ for (const selector of ['.header','.hero-art','h1','.actions .button']) {
+  const box=await page.locator(selector).boundingBox();
+  expect(box.x).toBeGreaterThanOrEqual(0);
+  expect(box.x+box.width).toBeLessThanOrEqual(page.viewportSize().width);
+  expect(box.y+box.height).toBeLessThanOrEqual(page.viewportSize().height);
+ }
+ if(test.info().project.name !== 'desktop') {
+  const hero=await page.locator('.hero').boundingBox();
+  expect(hero.y+hero.height).toBeLessThanOrEqual(page.viewportSize().height);
+  const artwork=await page.locator('.hero-art').boundingBox();
+  const title=await page.locator('h1').boundingBox();
+  expect(artwork.y+artwork.height).toBeLessThanOrEqual(title.y);
+  const menu=page.locator('summary');
+  await expect(page.getByRole('navigation')).toBeHidden();
+  await menu.focus();await page.keyboard.press('Enter');
+  await expect(page.getByRole('navigation')).toBeVisible();
+  await page.screenshot({path:`test-results/${test.info().project.name}-menu.png`});
+  await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'About',exact:true})).toBeFocused();
+  expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+  await page.keyboard.press('Escape');await expect(menu).toBeFocused();
+  await expect(page.getByRole('navigation')).toBeHidden();
+  await menu.click();await page.getByRole('navigation').getByRole('link',{name:'Listen',exact:true}).click();
+  await expect(page.locator('#listen')).toBeFocused();
+  await expect(page.getByRole('navigation')).toBeHidden();
+ }
+ await page.goto('/');
+ await page.screenshot({path:`test-results/${test.info().project.name}-first-screen.png`});
+});
+test('original radio icons, manifest and share assets resolve', async ({page,request}) => {
+ await page.goto('/');
+ const paths=await page.locator('link[rel="icon"],link[rel="apple-touch-icon"],link[rel="manifest"]').evaluateAll(links=>links.map(link=>link.getAttribute('href')));
+ for(const path of paths) expect((await request.get('/'+path)).ok()).toBe(true);
+ const manifest=await (await request.get('/assets/site.webmanifest')).json();
+ for(const icon of manifest.icons) expect((await request.get('/assets/'+icon.src)).ok()).toBe(true);
+ expect((await request.get('/assets/share-radio.png')).ok()).toBe(true);
+});
+test('navigation remains usable without JavaScript', async ({browser}) => {
+ const context=await browser.newContext({javaScriptEnabled:false,viewport:test.info().project.use.viewport});
+ const page=await context.newPage();await page.goto('http://127.0.0.1:4173/');
+ if(test.info().project.name !== 'desktop') await page.locator('summary').click();
+ await page.getByRole('navigation').getByRole('link',{name:'Contact',exact:true}).click();
+ await expect(page).toHaveURL(/#contact$/);await context.close();
 });
