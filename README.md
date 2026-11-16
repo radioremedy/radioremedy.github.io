@@ -1,6 +1,6 @@
 # Radio Remedy
 
-A lightweight static rebuild of the existing Radio Remedy site. No runtime packages, remote fonts, tracking, or automatic embed requests. HTML works without JavaScript; each recording has a direct SoundCloud link.
+A lightweight static rebuild of the existing Radio Remedy site. No runtime packages, remote fonts, tracking, or automatic embed requests. HTML works without JavaScript; each recording has a direct SoundCloud link. A dedicated Watch section and social link open the official Radio Remedy YouTube channel, with no remote video assets or scripts. See `docs/rebuild-review.md` for channel verification and the playback-check limitation.
 
 ## Work safely
 

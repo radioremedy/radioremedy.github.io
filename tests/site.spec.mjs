@@ -8,6 +8,10 @@ test('content, navigation, layout and accessibility',async({page})=>{
  page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');
  await expect(page.locator('h1')).toHaveCount(1);
+ await expect(page.getByRole('heading',{name:'Watch on YouTube.'})).toBeVisible();
+ const channel='https://www.youtube.com/@radioremedyrocks1382';
+ await expect(page.locator('#watch').getByRole('link',{name:'Visit Radio Remedy on YouTube'})).toHaveAttribute('href',channel);
+ await expect(page.locator('#contact').getByRole('link',{name:'Find us on YouTube'})).toHaveAttribute('href',channel);
  await expect(page.locator('.songs li')).toHaveText(baseline.songs);
  for(const member of baseline.members) await expect(page.locator('.members')).toContainText(member.replace(' - ',''));
  await expect(page.locator('iframe')).toHaveCount(0);expect(external).toEqual([]);
@@ -78,5 +82,7 @@ test('navigation remains usable without JavaScript', async ({browser}) => {
  const page=await context.newPage();await page.goto('http://127.0.0.1:4173/');
  if(test.info().project.name !== 'desktop') await page.locator('summary').click();
  await page.getByRole('navigation').getByRole('link',{name:'Contact',exact:true}).click();
- await expect(page).toHaveURL(/#contact$/);await context.close();
+ await expect(page).toHaveURL(/#contact$/);
+ await expect(page.locator('#watch a')).toHaveAttribute('href','https://www.youtube.com/@radioremedyrocks1382');
+ await context.close();
 });
